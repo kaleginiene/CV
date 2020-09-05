@@ -1,0 +1,27 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaleginiene/CV.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaleginiene/CV/issues"
+  },
+  "homepage": "https://github.com/kaleginiene/CV#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-sass": "^4.1.0"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2"
+  }
+}

@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Century Gothic";
+  src: url("Century-Gothic-400.ttf") format("truetype");
+}
+
+$headings-color: #7a1c57;
+$headings-font: "Century Gothic";
+
+main {
+  width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: $headings-font;
+  color: $headings-color;
+}

@@ -1,0 +1,49 @@
+@import "vars.scss";
+
+section {
+  h1,
+  h3 {
+    font-family: $headings-font;
+    text-align: right;
+  }
+  h3 {
+    color: #39393a;
+  }
+  .about-block {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: #e8e9e9;
+    img {
+      border-radius: 50%;
+      object-fit: cover;
+      width: 220px;
+      height: 220px;
+    }
+    span:first-child {
+      font-family: $headings-font;
+      color: $headings-color;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    span:nth-child(2) {
+      color: #c16faa;
+      font-weight: bold;
+      font-size: 30px;
+      font-family: "Century Gothic";
+    }
+    blockquote::before {
+      content: "“";
+      color: #a09f9f;
+      font-family: $headings-font;
+      font-size: 90px;
+    }
+    blockquote::after {
+      content: "„";
+      color: #d6d6d6;
+      font-family: $headings-font;
+      font-size: 55px;
+    }
+  }
+}
