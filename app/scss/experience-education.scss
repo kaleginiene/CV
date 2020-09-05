@@ -4,10 +4,37 @@
   display: flex;
   aside {
     flex: 3;
-    background-color: hotpink;
   }
   .container {
     flex: 7;
-    background-color: blue;
+    .experience,
+    .education {
+      background-color: #f0efef;
+      border-radius: 20px;
+      margin: 40px 0 20px 10px;
+      padding: 20px;
+      h2 {
+        color: $headings-color;
+        font-family: $headings-font;
+      }
+
+      h3 {
+        text-align: left;
+      }
+      .block {
+        display: flex;
+        flex-direction: row;
+        .dates {
+          flex: 3;
+          text-align: left;
+          padding: 10px;
+        }
+        .description {
+          flex: 7;
+          text-align: left;
+          padding: 10px;
+        }
+      }
+    }
   }
 }
