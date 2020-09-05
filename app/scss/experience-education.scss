@@ -1,0 +1,13 @@
+@import "vars.scss";
+
+.wrap {
+  display: flex;
+  aside {
+    flex: 3;
+    background-color: hotpink;
+  }
+  .container {
+    flex: 7;
+    background-color: blue;
+  }
+}
