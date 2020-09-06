@@ -7,7 +7,8 @@
   .container {
     flex: 7;
     .experience,
-    .education {
+    .education,
+    .other {
       background-color: #f0efef;
       border-radius: 20px;
       margin: 40px 0 20px 10px;
@@ -22,6 +23,21 @@
         text-align: left;
         color: #545658;
         font-size: 16px;
+      }
+      hr {
+        height: 2px;
+        width: 100%;
+        background-color: #a09f9f;
+        border: none;
+        position: relative;
+      }
+      hr::before {
+        content: "";
+        width: 20px;
+        height: 6px;
+        background-color: $headings-color;
+        position: absolute;
+        top: -2px;
       }
       .block {
         display: flex;

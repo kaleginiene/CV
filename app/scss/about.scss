@@ -13,8 +13,8 @@ section {
       content: "";
       width: 20px;
       height: 20px;
-      right: 250px;
-      top: -10px;
+      right: 260px;
+      top: -20px;
       border-left: 7px solid $headings-color;
       border-top: 7px solid $headings-color;
       position: absolute;
@@ -23,8 +23,8 @@ section {
       content: "";
       width: 20px;
       height: 20px;
-      right: -10px;
-      bottom: -10px;
+      right: -20px;
+      bottom: -20px;
       border-right: 7px solid $headings-color;
       border-bottom: 7px solid $headings-color;
       position: absolute;
@@ -106,7 +106,7 @@ section {
       font-family: $headings-font;
       font-size: 50px;
       position: absolute;
-      right: 0;
+      right: 25px;
       bottom: 0;
     }
   }
