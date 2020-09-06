@@ -1,7 +1,6 @@
-@import "vars.scss";
-
 .wrap {
   display: flex;
+  padding-bottom: 10px;
   aside {
     flex: 3;
   }
@@ -13,13 +12,16 @@
       border-radius: 20px;
       margin: 40px 0 20px 10px;
       padding: 20px;
-      h2 {
+      h2,
+      h3 {
         color: $headings-color;
         font-family: $headings-font;
       }
 
       h3 {
         text-align: left;
+        color: #545658;
+        font-size: 16px;
       }
       .block {
         display: flex;
@@ -27,12 +29,21 @@
         .dates {
           flex: 3;
           text-align: left;
+          color: #545658;
           padding: 10px;
+          font-family: $headings-font;
+          font-size: 12px;
+          font-weight: bold;
         }
         .description {
           flex: 7;
           text-align: left;
           padding: 10px;
+          p {
+            color: #a09f9f;
+            font-family: $headings-font;
+            font-size: 12px;
+          }
         }
       }
     }

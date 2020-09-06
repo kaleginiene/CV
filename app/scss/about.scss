@@ -1,14 +1,48 @@
-@import "vars.scss";
-
 section {
-  h1,
-  h3 {
-    font-family: $headings-font;
+  .name-block {
     text-align: right;
+
+    h1,
+    h3 {
+      font-family: $headings-font;
+    }
+    h1 {
+      position: relative;
+    }
+    h1::before {
+      content: "";
+      width: 20px;
+      height: 20px;
+      right: 250px;
+      top: -10px;
+      border-left: 7px solid $headings-color;
+      border-top: 7px solid $headings-color;
+      position: absolute;
+    }
+    h1::after {
+      content: "";
+      width: 20px;
+      height: 20px;
+      right: -10px;
+      bottom: -10px;
+      border-right: 7px solid $headings-color;
+      border-bottom: 7px solid $headings-color;
+      position: absolute;
+    }
+    h3 {
+      color: #39393a;
+      margin-bottom: 0;
+    }
+    hr {
+      width: 216px;
+      height: 2px;
+      background-color: #a09f9f;
+      text-align: right;
+      margin-right: 0;
+      border: none;
+    }
   }
-  h3 {
-    color: #39393a;
-  }
+
   .about-block {
     padding: 0 20px;
     display: flex;
@@ -53,6 +87,9 @@ section {
       position: relative;
       padding: 50px;
       margin-left: 30px;
+      font-family: $about-font;
+      color: $headings-color;
+      font-size: 14px;
     }
     blockquote::before {
       content: "“";

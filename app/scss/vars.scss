@@ -1,17 +1,40 @@
 @font-face {
   font-family: "Century Gothic";
-  src: url("Century-Gothic-400.ttf") format("truetype");
+  src: url("fonts/Century-Gothic-400.ttf") format("truetype");
 }
-
+@font-face {
+  font-family: "Bahnschrift";
+  src: url("fonts/bahnschrift.woff");
+}
 $headings-color: #7a1c57;
 $headings-font: "Century Gothic";
+$about-font: "Bahnschrift";
 
 main {
   width: 900px;
   margin: 0 auto;
+  position: relative;
+}
+main::before {
+  content: "";
+  width: 10px;
+  height: 20px;
+  background-color: $headings-color;
+  position: absolute;
+}
+.wrap::after {
+  content: "";
+  width: 10px;
+  height: 20px;
+  right: -20px;
+  bottom: 0;
+  background-color: $headings-color;
+  position: absolute;
 }
 
-h1 {
+h1,
+.info,
+a {
   font-family: $headings-font;
   color: $headings-color;
 }

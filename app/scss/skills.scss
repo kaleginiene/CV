@@ -1,0 +1,67 @@
+@import "vars.scss";
+
+aside {
+  padding: 20px;
+  .heading-block {
+    display: flex;
+    flex-direction: row;
+    .before {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-right: 10px;
+      .box-color {
+        width: 15px;
+        height: 15px;
+      }
+      .box-color:first-child {
+        background-color: $headings-color;
+      }
+      .box-color:nth-child(2) {
+        background-color: #c16faa;
+      }
+      .box-color:nth-child(3) {
+        background-color: #d6d6d6;
+      }
+    }
+    h2 {
+      color: $headings-color;
+      font-family: $headings-font;
+      text-align: left;
+    }
+  }
+  .contact-block {
+    display: flex;
+    align-items: center;
+
+    .logo {
+      width: 30px;
+      height: 30px;
+      background-size: cover;
+      margin: 10px 20px 20px 0;
+    }
+    .phone {
+      background-image: url("images/phone.svg");
+    }
+    .email {
+      background-image: url("images/mail.svg");
+    }
+    .linkedin {
+      background-image: url("images/linkedin.svg");
+    }
+    .github {
+      background-image: url("images/github.svg");
+    }
+    .location {
+      background-image: url("images/pin.svg");
+    }
+    .info,
+    a {
+      font-weight: bold;
+      width: calc(100% - 50px);
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+}
