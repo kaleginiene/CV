@@ -6,9 +6,17 @@
   font-family: "Bahnschrift";
   src: url("fonts/bahnschrift.woff");
 }
+
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("/fonts/myriad-pro-regular.woff");
+}
+
 $headings-color: #7a1c57;
 $headings-font: "Century Gothic";
 $about-font: "Bahnschrift";
+$paragraph-font: "Myriad Pro";
+$paragraph-color: #a09f9f;
 
 main {
   width: 900px;
@@ -38,4 +46,17 @@ h1,
 a {
   font-family: $headings-font;
   color: $headings-color;
+}
+@media screen and (max-width: 480px) {
+  main {
+    min-width: 310px;
+    max-width: 470px;
+  }
+  .wrap {
+    padding-right: 10px;
+  }
+  .wrap::after {
+    content: "";
+    right: 0px;
+  }
 }

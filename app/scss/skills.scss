@@ -58,10 +58,85 @@ aside {
     .info,
     a {
       font-weight: bold;
-      width: calc(100% - 50px);
-    }
-    a {
       text-decoration: none;
     }
+    a:hover,
+    .info:hover {
+      color: #c16faa;
+    }
+  }
+  .skills-block {
+    display: flex;
+    margin-bottom: 10px;
+    .skill,
+    .level-block {
+      width: 50%;
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      color: $headings-color;
+      font-family: $headings-font;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .level {
+      position: relative;
+      width: 130px;
+      height: 5px;
+      background-color: #d6d6d6;
+      border-radius: 20px;
+      .skill-level {
+        background-color: $headings-color;
+        border-radius: 20px;
+        width: 50%;
+        height: 5px;
+      }
+      .skill-level:hover {
+        background-color: #c16faa;
+      }
+      .javaScript,
+      .vue,
+      .photoshop {
+        width: 20%;
+      }
+      .node {
+        width: 10%;
+      }
+      .teamwork {
+        width: 60%;
+      }
+      .full {
+        width: 100%;
+      }
+      .eighty {
+        width: 80%;
+      }
+    }
+  }
+  .additional-block {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f0efef;
+    border-radius: 20px;
+    text-align: justify;
+    font-family: $paragraph-font;
+    color: $paragraph-color;
+    span {
+      font-weight: bold;
+      color: #545658;
+    }
+  }
+}
+@media screen and (max-device-width: 480px) {
+  .heading-block,
+  .contact-block,
+  .logo,
+  a,
+  .info,
+  .level-block,
+  .skill {
+    justify-content: center;
+    max-width: 450px;
   }
 }

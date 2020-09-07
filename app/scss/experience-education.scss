@@ -38,6 +38,7 @@
         background-color: $headings-color;
         position: absolute;
         top: -2px;
+        animation: slide;
       }
       .block {
         display: flex;
@@ -56,11 +57,28 @@
           text-align: left;
           padding: 10px;
           p {
-            color: #a09f9f;
-            font-family: $headings-font;
+            color: $paragraph-color;
+            font-family: $paragraph-font;
             font-size: 12px;
           }
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-device-width: 480px) {
+  .wrap {
+    flex-direction: column;
+    min-width: 320px;
+    max-width: 480px;
+    aside,
+    .container {
+      margin: 0 auto;
+      .experience,
+      .education,
+      .other {
+        max-width: 450px;
       }
     }
   }
