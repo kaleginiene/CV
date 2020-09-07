@@ -31,15 +31,16 @@
         border: none;
         position: relative;
       }
-      hr::before {
+      hr::after {
         content: "";
         width: 20px;
         height: 6px;
         background-color: $headings-color;
         position: absolute;
         top: -2px;
-        animation: slide;
+        right: 0;
       }
+
       .block {
         display: flex;
         flex-direction: row;
@@ -59,7 +60,7 @@
           p {
             color: $paragraph-color;
             font-family: $paragraph-font;
-            font-size: 12px;
+            font-size: 14px;
           }
         }
       }

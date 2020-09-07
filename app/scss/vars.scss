@@ -52,6 +52,10 @@ a {
     min-width: 310px;
     max-width: 470px;
   }
+  main::before {
+    content: "";
+    top: -5px;
+  }
   .wrap {
     padding-right: 10px;
   }
