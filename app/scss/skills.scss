@@ -33,12 +33,13 @@ aside {
   .contact-block {
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
 
     .logo {
       width: 30px;
       height: 30px;
       background-size: cover;
-      margin: 10px 20px 20px 0;
+      margin: 0px 20px 0px 0;
     }
     .phone {
       background-image: url("images/phone.svg");
@@ -95,12 +96,10 @@ aside {
       .skill-level:hover {
         background-color: #c16faa;
       }
-      .javaScript,
-      .vue,
-      .photoshop {
+      .twenty {
         width: 20%;
       }
-      .node {
+      .ten {
         width: 10%;
       }
       .teamwork {
@@ -116,7 +115,7 @@ aside {
   }
   .additional-block {
     margin: 20px 0;
-    padding: 10px;
+    padding: 20px;
     background-color: #f0efef;
     border-radius: 20px;
     text-align: justify;

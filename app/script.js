@@ -5,5 +5,4 @@ window.addEventListener("load", (event) => {
       item.style.opacity = "1";
     });
   }, 2000);
-  console.log(timer);
 });
