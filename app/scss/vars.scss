@@ -49,8 +49,7 @@ a {
 }
 @media screen and (max-width: 480px) {
   main {
-    min-width: 310px;
-    max-width: 470px;
+    width: 100%;
   }
   main::before {
     content: "";
