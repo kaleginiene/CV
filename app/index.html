@@ -7,7 +7,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="swiper-style.css"/>
 
     <title>Ieva Kaleginiene, CV</title>
   </head>
@@ -320,9 +325,32 @@
               </div>
             </div>
           </section>
+          <!-- Swiper -->
+          <div class="swiper-container swiper-block" style="max-width: 600px;">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="image"
+                  src="./images/certificates/javascript-basics.jpeg"
+                  alt="JavaScript certificate"
+                />
+              </div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div>
+              <div class="swiper-slide">Slide 10</div>
+            </div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
       </section>
     </main>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

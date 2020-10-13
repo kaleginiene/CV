@@ -11,5 +11,6 @@ In this repository, you will find information about my job experience and all in
 
 ### :rocket: For this project i used:
 
-- node.js
+- node.js.
 - Automate toolkit gulp: browser-sync, gulp-autoprefixer, gulp-sass.
+- Swiper.js framework.
