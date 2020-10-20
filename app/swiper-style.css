@@ -40,10 +40,8 @@
   .swiper-slide:hover {
     transform: none;
   }
-  .swiper-slide:active {
-    transform: scale(2);
-    z-index: 9;
-    transition: ease-in-out 0.3s;
+  .swiper-slide img {
+    width: 220px;
   }
   .swiper-pagination {
     width: 100%;
