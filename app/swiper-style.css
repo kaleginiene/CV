@@ -40,7 +40,7 @@
   .swiper-slide:hover {
     transform: none;
   }
-  .swiper-slide img {
+  .swiper-slide .swiper-zoom-container img {
     width: 220px;
   }
   .swiper-pagination {
