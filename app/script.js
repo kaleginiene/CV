@@ -16,16 +16,17 @@ var swiper = new Swiper(".swiper-container", {
   loopedSlides: 1,
   spaceBetween: 1,
   centeredSlides: true,
-  slidesPerGroup: 1,
   scrollbar: true,
+  allowSlideNext: true,
+  allowSlidePrev: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
-  // zoom: true,
-  // zoom: {
-  //   maxRatio: 2,
-  // },
   scrollbar: {
     el: ".swiper-scrollbar",
     draggable: false,
@@ -33,10 +34,19 @@ var swiper = new Swiper(".swiper-container", {
   breakpoints: {
     480: {
       spaceBetween: 5,
-      slidesPerView: 3,
-      centeredSlides: false,
+      slidesPerView: 1,
+      centeredSlides: true,
       watchOverflow: true,
-      loopedSlides: 3,
+      loopedSlides: 1,
+      allowSlideNext: true,
+      allowSlidePrev: true,
     },
+    mousewheel: {
+      invert: true,
+    },
+    keyboard: true,
+    observer: true,
+    observeParents: true,
+    parallax: true,
   },
 });
