@@ -35,10 +35,10 @@
 @media screen and (max-device-width: 480px) {
   .swiper-container {
     width: 100%;
+    max-width: 320px;
+    margin-left: 50px;
   }
-  .swiper-wrapper {
-    width: 300px;
-  }
+
   .swiper-slide:hover {
     transform: none;
   }
@@ -46,7 +46,8 @@
   .swiper-zoom-container img {
     width: 300px;
   }
-  .swiper-pagination {
-    width: 100%;
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
   }
 }
