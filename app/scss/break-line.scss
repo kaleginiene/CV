@@ -25,3 +25,8 @@
     background-color: #e7c5de;
   }
 }
+@media screen and (max-device-width: 480px) {
+  .break-line {
+    width: 100%;
+  }
+}

@@ -1,6 +1,6 @@
 .swiper-container {
   padding: 0px 0px 40px;
-  width: 600px;
+  max-width: 600px;
   height: 280px;
 }
 .swiper-wrapper {

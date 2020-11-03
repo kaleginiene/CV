@@ -18,6 +18,10 @@ $about-font: "Bahnschrift";
 $paragraph-font: "Myriad Pro";
 $paragraph-color: #a09f9f;
 
+body {
+  min-width: fit-content;
+}
+
 main {
   width: 900px;
   margin: 0 auto;
@@ -47,9 +51,9 @@ a {
   font-family: $headings-font;
   color: $headings-color;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-device-width: 480px) {
   main {
-    width: 100%;
+    width: 90%;
   }
   main::before {
     content: "";
