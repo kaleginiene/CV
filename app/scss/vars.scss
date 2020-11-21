@@ -12,7 +12,7 @@
   src: url("/fonts/myriad-pro-regular.woff");
 }
 
-$headings-color: #7a1c57;
+$headings-color: #52b1bd;
 $headings-font: "Century Gothic";
 $about-font: "Bahnschrift";
 $paragraph-font: "Myriad Pro";
@@ -53,17 +53,18 @@ a {
 }
 @media screen and (max-device-width: 480px) {
   main {
-    width: 90%;
+    width: 100%;
   }
   main::before {
     content: "";
-    top: -5px;
+    display: none;
   }
   .wrap {
     padding-right: 10px;
   }
+
   .wrap::after {
     content: "";
-    right: 0px;
+    display: none;
   }
 }
