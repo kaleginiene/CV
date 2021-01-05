@@ -1,7 +1,7 @@
 @import "vars.scss";
 
 aside {
-  padding: 20px;
+  padding: 10px 10px;
   .heading-block {
     display: flex;
     flex-direction: row;
@@ -33,7 +33,7 @@ aside {
   .contact-block {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 
     .logo {
       width: 30px;
@@ -68,7 +68,7 @@ aside {
   }
   .skills-block {
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     .skill,
     .level-block {
       width: 50%;
@@ -85,7 +85,7 @@ aside {
       position: relative;
       width: 130px;
       height: 5px;
-      background-color: #ecf6f7;
+      background-color: #fcf8f7;
       border-radius: 20px;
       .skill-level {
         background-color: $headings-color;
@@ -93,23 +93,27 @@ aside {
         width: 50%;
         height: 5px;
       }
-      .skill-level:hover {
-        background-color: #fcf8f7;
+
+      .ten {
+        width: 10%;
       }
       .twenty {
         width: 20%;
       }
-      .ten {
-        width: 10%;
+      .thirty {
+        width: 30%;
+      }
+      .fifty {
+        width: 50%;
       }
       .teamwork {
         width: 60%;
       }
-      .full {
-        width: 100%;
-      }
       .eighty {
         width: 80%;
+      }
+      .full {
+        width: 100%;
       }
     }
   }
